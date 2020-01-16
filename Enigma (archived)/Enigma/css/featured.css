@@ -1,0 +1,121 @@
+:root {
+	--color-quiz-main: #441a44;
+	--color-quiz-box: #b946b9;
+	--color-ar-main: #3d7979;
+	--color-ar-box: #254848;
+	--color-word-main: #2f7d49;
+	--color-word-box: #1B4A2B;
+}
+
+#feat-games {
+    padding: 1em 1em 1em 1em;
+    height: 35.7em;
+    margin-top: 0.7em;
+}
+
+.feat-game {
+    background-color: #373737;
+    width: 48%;
+    height: 15.7em;
+    margin: 1% 1% 1% 1%;
+    float: left;
+	border-width: 0 0.1em 0 0.1em;
+	padding: 0.5em 0.5em 0.1em 0.5em;
+	cursor: pointer;
+}
+
+.feat-game:hover {
+	border-width: 0 0.2em 0 0.2em;
+	background-color: #4B4B4B;
+}
+
+.feat-game-inside {
+	padding-bottom: 0.3em;
+	height: 87%;
+}
+
+#feat-game-1 {
+    background-color: var(--color-quiz-main);
+	padding-top: 7%;
+}
+
+#feat-game-2 {
+    background-color: var(--color-ar-main);
+	padding-top: 10%;
+}
+
+#feat-game-3 {
+    background-color: var(--color-word-main);
+	padding-top: 15%;
+}
+
+#feat-game-4 {
+    background-color: #2e163a;
+}
+
+#feat-que {
+	width: 70%;
+	height: 30%;
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 8%;
+	background-color: var(--color-quiz-box);
+}
+
+#feat-answers {
+	width: 80%;
+	height: 35%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 5%;
+}
+
+.feat-ans {
+	margin: 3% 4% 3% 4%;
+    width: 42%;
+    height: 44%;
+    float: left;
+	background-color: var(--color-quiz-box);;
+}
+
+#feat-ar-final {
+	margin: 0% 40% 0% 40%;
+	width: 20%;
+	height: 20%;
+	background-color: var(--color-ar-box);
+}
+
+#feat-ar-state {
+	margin: 5% 20% 0% 20%;
+	width: 60%;
+	height: 20%;
+	background-color: var(--color-ar-box);
+}
+
+#feat-ar-op {
+	margin: 5% 25% 0% 25%;
+	width: 50%;
+	height: 20%;
+}
+
+.feat-ar-op-item {
+	margin: 0% 1% 0% 1%;
+	width: 31%;
+	height: 100%;
+    float: left;
+	background-color: var(--color-ar-box);
+}
+
+#feat-word-def {
+	margin: 0% 15% 0% 15%;
+	width: 70%;
+	height: 40%;
+	background-color: var(--color-word-box);
+}
+
+#feat-word {
+	margin: 4% 15% 0% 53%;
+	width: 30%;
+	height: 20%;
+	background-color: var(--color-word-box);
+}

@@ -1,0 +1,35 @@
+<?php
+
+require 'commonFunc.php';
+
+if (loggedin()) {
+    header("Location: home.html");
+    exit();
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/foundation.css"/>
+    <link rel="stylesheet" href="css/style_home.css"/>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="js/register.js"> </script>
+    <title>Enigma</title>
+</head>
+<body>
+    <form action="includes/register.php" method="post">
+        <?php
+          require_once('recaptchalib.php');
+          $publickey = "6LdUDAwUAAAAABEgwM6VYdWnU5RQYe6x2ok_Uz_j"; // you got this from the signup page
+          echo recaptcha_get_html($publickey);
+        ?>
+        <input type="email" class="textbox" placeholder="Емаил" name="email"/>
+        <input type="password" class="textbox" placeholder="Лозинка" name="password"/>
+        <!--<div class="g-recaptcha" data-sitekey="6LdUDAwUAAAAABEgwM6VYdWnU5RQYe6x2ok_Uz_j"></div>-->
+        <button type="submit" class="btn home"> Регистрирај се! </button>
+    </form>
+</body>
+</html>

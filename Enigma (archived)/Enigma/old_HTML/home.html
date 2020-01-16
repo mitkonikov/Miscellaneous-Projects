@@ -1,0 +1,55 @@
+<?php
+
+require 'commonFunc.php';
+
+if (loggedin() == FALSE) {
+    header("Location: index.html");
+    exit();
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enigma</title>
+    <link rel="stylesheet" href="css/foundation.css"/>
+    <link rel="stylesheet" href="css/style_home.css"/>
+    <link href="http://allfont.net/allfont.css?fonts=cyrillicgoth-medium" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="main-container">
+        <!-- NAVIGATION -->
+        <div id="navigation">
+            <a href="index.html?logout="> Одјави се! </a>
+            <label> Welcome, <?php require 'class-query.php'; echo $query->getInfo($_SESSION['enigma_user'])->Name; ?> ! </label>
+        </div>
+
+        <!-- LOGO SECTION -->
+        <div id="logo-section">
+            <div id="logo"> <h1 class="small-logo-text">Енигма</h1> </div>
+            <div id="statistics" class="box">
+                0 Прашања <br>
+                1 Вклучен играч
+                <div id="dec"></div>
+            </div>
+        </div>
+
+        <div id="feat-games">
+            <div class="box feat-game" id="feat-game-1">
+
+            </div>
+            <div class="box feat-game" id="feat-game-2">
+
+            </div>
+            <div class="box feat-game" id="feat-game-3">
+
+            </div>
+            <div class="box feat-game" id="feat-game-4">
+
+            </div>
+        </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/foundation.css"/>
+    <link rel="stylesheet" href="css/style_home.css"/>
+    <link href="http://allfont.net/allfont.css?fonts=andantino-script" rel="stylesheet" type="text/css" />
+    <link href="http://allfont.net/allfont.css?fonts=cyrillicgoth-medium" rel="stylesheet" type="text/css" />
+    <script src="js/foundation.js"> </script>
+    <script src="js/jquery-3.1.1.js"> </script>
+    <title>Enigma</title>
+</head>
+<body>
+    <div class="row">
+        <div class="large-offset-2 large-8">
+            <div id="logo"> <h1 class="logo-text">Енигма</h1> </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-offset-8 large-2 medium-offset-8 medium-4 small-offset-6 small-6">
+            <h1 class="logo-credit"> Mitko Nikov </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-offset-3 large-6 last">
+            <label>
+                Првата македонска веб апликација која овозможува забавна интеракција преку игри и квизови.
+                Играјте квизови на различни теми со помош на најголемата база на прашања во Македонија.
+                Имаме прашања за различни предмети како: Македонски, Математика, Биологија, Хемија, Физика и работиме на уште повеќе.
+                ..........
+            </label>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="row">
+            <div class="large-12 medium-12 small-12">
+                <button type="button" class="btn home" onclick="window.location = 'login.html';"> Најави се! </button>
+                <button type="button" class="btn home" onclick="window.location = 'register.html';"> Регистрирај се! </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

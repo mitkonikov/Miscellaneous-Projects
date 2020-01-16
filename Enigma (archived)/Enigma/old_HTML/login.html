@@ -1,0 +1,61 @@
+<?php
+
+require 'commonFunc.php';
+
+if (loggedin()) {
+    header("Location: home.html");
+    exit();
+}
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/foundation.css"/>
+    <link rel="stylesheet" href="css/style_home.css"/>
+    <link rel="stylesheet" href="css/style_login.css"/>
+    <link href="http://allfont.net/allfont.css?fonts=andantino-script" rel="stylesheet" type="text/css" />
+    <link href="http://allfont.net/allfont.css?fonts=cyrillicgoth-medium" rel="stylesheet" type="text/css" />
+    <script src="js/foundation.js"> </script>
+    <script src="js/jquery-3.1.1.js"> </script>
+    <script src="js/login.js"> </script>
+    <title>Enigma</title>
+</head>
+<body>
+    <div class="row">
+        <div class="large-centered medium-centered small-collapse columns"> <!-- NEED SOME WORK -->
+            <div id="logo"> <h1 class="logo-text">Енигма</h1> </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="large-offset-8 large-2 medium-offset-8 medium-4 small-offset-6 small-6">
+            <h1 class="logo-credit"> Mitko Nikov </h1>
+        </div>
+    </div>
+    <div id="login-form">
+        <div id="login-email">
+            <label> Емаил: </label>
+            <input type="email" class="textbox" placeholder="Емаил" id="email"/>
+        </div>
+        <div id="login-password">
+            <label> Лозинка: </label>
+            <input type="password" class="textbox" placeholder="Лозинка" id="password"/>
+        </div>
+        <div id="login-buttons">
+            <input type="checkbox" id="remember"> Запомни ме
+            <button type="button" class="btn home" onclick="logmein();"> Најави се </button>
+            <button onclick="" class="square"> Ја заборавив лозинката </button>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="row">
+            <div class="large-12 medium-12 small-12">
+                <button type="button" class="btn home" onclick="window.location = 'index.html';"> Врати се на почетна </button>
+                <button type="button" class="btn home" onclick="window.location = 'register.html';"> Регистрирај се! </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
