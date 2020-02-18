@@ -1,0 +1,9 @@
+c:\users\pcc\documents\visual studio 2012\Projects\ExpendEffectCSharp\ExpendEffectCSharp\bin\Debug\ExpendEffectCSharp.exe.config
+c:\users\pcc\documents\visual studio 2012\Projects\ExpendEffectCSharp\ExpendEffectCSharp\bin\Debug\ExpendEffectCSharp.exe
+c:\users\pcc\documents\visual studio 2012\Projects\ExpendEffectCSharp\ExpendEffectCSharp\bin\Debug\ExpendEffectCSharp.pdb
+c:\users\pcc\documents\visual studio 2012\Projects\ExpendEffectCSharp\ExpendEffectCSharp\obj\Debug\ExpendEffectCSharp.csprojResolveAssemblyReference.cache
+c:\users\pcc\documents\visual studio 2012\Projects\ExpendEffectCSharp\ExpendEffectCSharp\obj\Debug\ExpendEffectCSharp.Form1.resources
+c:\users\pcc\documents\visual studio 2012\Projects\ExpendEffectCSharp\ExpendEffectCSharp\obj\Debug\ExpendEffectCSharp.Properties.Resources.resources
+c:\users\pcc\documents\visual studio 2012\Projects\ExpendEffectCSharp\ExpendEffectCSharp\obj\Debug\ExpendEffectCSharp.csproj.GenerateResource.Cache
+c:\users\pcc\documents\visual studio 2012\Projects\ExpendEffectCSharp\ExpendEffectCSharp\obj\Debug\ExpendEffectCSharp.exe
+c:\users\pcc\documents\visual studio 2012\Projects\ExpendEffectCSharp\ExpendEffectCSharp\obj\Debug\ExpendEffectCSharp.pdb

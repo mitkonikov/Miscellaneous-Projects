@@ -1,0 +1,8 @@
+c:\users\pcc\documents\visual studio 2012\Projects\PerpendicularLineToRadius\PerpendicularLineToRadius\bin\Debug\PerpendicularLineToRadius.exe.config
+c:\users\pcc\documents\visual studio 2012\Projects\PerpendicularLineToRadius\PerpendicularLineToRadius\bin\Debug\PerpendicularLineToRadius.exe
+c:\users\pcc\documents\visual studio 2012\Projects\PerpendicularLineToRadius\PerpendicularLineToRadius\bin\Debug\PerpendicularLineToRadius.pdb
+c:\users\pcc\documents\visual studio 2012\Projects\PerpendicularLineToRadius\PerpendicularLineToRadius\obj\Debug\PerpendicularLineToRadius.Form1.resources
+c:\users\pcc\documents\visual studio 2012\Projects\PerpendicularLineToRadius\PerpendicularLineToRadius\obj\Debug\PerpendicularLineToRadius.Properties.Resources.resources
+c:\users\pcc\documents\visual studio 2012\Projects\PerpendicularLineToRadius\PerpendicularLineToRadius\obj\Debug\PerpendicularLineToRadius.csproj.GenerateResource.Cache
+c:\users\pcc\documents\visual studio 2012\Projects\PerpendicularLineToRadius\PerpendicularLineToRadius\obj\Debug\PerpendicularLineToRadius.exe
+c:\users\pcc\documents\visual studio 2012\Projects\PerpendicularLineToRadius\PerpendicularLineToRadius\obj\Debug\PerpendicularLineToRadius.pdb

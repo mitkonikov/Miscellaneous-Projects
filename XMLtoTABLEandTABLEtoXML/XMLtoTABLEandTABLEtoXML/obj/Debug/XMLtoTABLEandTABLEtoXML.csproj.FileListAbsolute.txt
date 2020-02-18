@@ -1,0 +1,9 @@
+c:\users\pcc\documents\visual studio 2012\Projects\XMLtoTABLEandTABLEtoXML\XMLtoTABLEandTABLEtoXML\bin\Debug\XMLtoTABLEandTABLEtoXML.exe.config
+c:\users\pcc\documents\visual studio 2012\Projects\XMLtoTABLEandTABLEtoXML\XMLtoTABLEandTABLEtoXML\obj\Debug\XMLtoTABLEandTABLEtoXML.csprojResolveAssemblyReference.cache
+c:\users\pcc\documents\visual studio 2012\Projects\XMLtoTABLEandTABLEtoXML\XMLtoTABLEandTABLEtoXML\obj\Debug\XMLtoTABLEandTABLEtoXML.Main.resources
+c:\users\pcc\documents\visual studio 2012\Projects\XMLtoTABLEandTABLEtoXML\XMLtoTABLEandTABLEtoXML\obj\Debug\XMLtoTABLEandTABLEtoXML.Properties.Resources.resources
+c:\users\pcc\documents\visual studio 2012\Projects\XMLtoTABLEandTABLEtoXML\XMLtoTABLEandTABLEtoXML\obj\Debug\XMLtoTABLEandTABLEtoXML.csproj.GenerateResource.Cache
+c:\users\pcc\documents\visual studio 2012\Projects\XMLtoTABLEandTABLEtoXML\XMLtoTABLEandTABLEtoXML\bin\Debug\XMLtoTABLEandTABLEtoXML.exe
+c:\users\pcc\documents\visual studio 2012\Projects\XMLtoTABLEandTABLEtoXML\XMLtoTABLEandTABLEtoXML\bin\Debug\XMLtoTABLEandTABLEtoXML.pdb
+c:\users\pcc\documents\visual studio 2012\Projects\XMLtoTABLEandTABLEtoXML\XMLtoTABLEandTABLEtoXML\obj\Debug\XMLtoTABLEandTABLEtoXML.exe
+c:\users\pcc\documents\visual studio 2012\Projects\XMLtoTABLEandTABLEtoXML\XMLtoTABLEandTABLEtoXML\obj\Debug\XMLtoTABLEandTABLEtoXML.pdb

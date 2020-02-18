@@ -1,0 +1,11 @@
+﻿<Window x:Class="WPFRippleEffect.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:custom="clr-namespace:WPFRippleEffect"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <custom:RippleEffectDecorator HighlightBackground="#FFAA2020" Background="#FFDA4343" Width="200" Height="80">
+            <Label Content="SUBSCRIBE!" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="White" Margin="-48,-25,-47,-24" FontSize="20"/>
+        </custom:RippleEffectDecorator>
+    </Grid>
+</Window>

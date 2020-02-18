@@ -1,0 +1,16 @@
+c:\users\pcc\documents\visual studio 2012\Projects\WPFRippleEffect\WPFRippleEffect\bin\Debug\WPFRippleEffect.exe.config
+c:\users\pcc\documents\visual studio 2012\Projects\WPFRippleEffect\WPFRippleEffect\bin\Debug\WPFRippleEffect.exe
+c:\users\pcc\documents\visual studio 2012\Projects\WPFRippleEffect\WPFRippleEffect\bin\Debug\WPFRippleEffect.pdb
+c:\users\pcc\documents\visual studio 2012\Projects\WPFRippleEffect\WPFRippleEffect\obj\Debug\MainWindow.g.cs
+c:\users\pcc\documents\visual studio 2012\Projects\WPFRippleEffect\WPFRippleEffect\obj\Debug\App.g.cs
+c:\users\pcc\documents\visual studio 2012\Projects\WPFRippleEffect\WPFRippleEffect\obj\Debug\GeneratedInternalTypeHelper.g.cs
+c:\users\pcc\documents\visual studio 2012\Projects\WPFRippleEffect\WPFRippleEffect\obj\Debug\WPFRippleEffect_MarkupCompile.cache
+c:\users\pcc\documents\visual studio 2012\Projects\WPFRippleEffect\WPFRippleEffect\obj\Debug\WPFRippleEffect_MarkupCompile.lref
+c:\users\pcc\documents\visual studio 2012\Projects\WPFRippleEffect\WPFRippleEffect\obj\Debug\MainWindow.baml
+c:\users\pcc\documents\visual studio 2012\Projects\WPFRippleEffect\WPFRippleEffect\obj\Debug\WPFRippleEffect.g.resources
+c:\users\pcc\documents\visual studio 2012\Projects\WPFRippleEffect\WPFRippleEffect\obj\Debug\WPFRippleEffect.Properties.Resources.resources
+c:\users\pcc\documents\visual studio 2012\Projects\WPFRippleEffect\WPFRippleEffect\obj\Debug\WPFRippleEffect.csproj.GenerateResource.Cache
+c:\users\pcc\documents\visual studio 2012\Projects\WPFRippleEffect\WPFRippleEffect\obj\Debug\WPFRippleEffect.exe
+c:\users\pcc\documents\visual studio 2012\Projects\WPFRippleEffect\WPFRippleEffect\obj\Debug\WPFRippleEffect.pdb
+c:\users\pcc\documents\visual studio 2012\Projects\WPFRippleEffect\WPFRippleEffect\obj\Debug\App.baml
+C:\Users\PCC\Documents\Visual Studio 2012\Projects\WPFRippleEffect\WPFRippleEffect\obj\Debug\WPFRippleEffect.csprojResolveAssemblyReference.cache
