@@ -20,7 +20,7 @@ void loop() {
   if (averageCount == 0) {
     average = analogRead(A1);
     averageCount++;
-  } else if (averageCount < 10) {
+  } else if (averageCount < 30) {
     average = (average + analogRead(A1)) / 2;
     averageCount++;
   } else {

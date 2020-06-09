@@ -27,9 +27,11 @@ int dir = 0;
 int prev = 0;
 int prevDir = 0;
 
+bool enabled = true;
+
 // Sleep Function
 long previousMillis = 0;
-#define sleepTimer 500
+#define sleepTimer 2000
 
 RF24 radio(9, 10); // CE, CSN
 const byte address[6] = "00001";
@@ -61,6 +63,9 @@ void setup() {
   // Serial.println("began listening");
 }
 
+int defAcc = 1000;
+int diffAcc = 0;
+
 void loop() {
   if (radio.available()) {
     radio.read(&pot, sizeof(pot));
@@ -69,15 +74,17 @@ void loop() {
     previousMillis = millis();
   }
 
-  stepper.moveTo(curPot);
-  stepper.run();
+  if (enabled) {
+    stepper.setAcceleration(defAcc + diffAcc);
+    stepper.moveTo(curPot);
+    stepper.run();
+  }
   
   int diff = pot - prev;
   
-  if (abs(diff) < 3) {
-    return;
-  } else {
+  if (abs(diff) > 5) {
     curPot = pot;
+    diffAcc = diff * 30;
     
     if (diff > 0) dir = 0;
     else dir = 1;
@@ -85,15 +92,18 @@ void loop() {
     if (dir != prevDir) stepper.stop();
     
     digitalWrite(enablePin, LOW);
+    enabled = true;
 
     // remember the values for later use
     prevDir = dir;
     prev = pot;
+    previousMillis = millis();
   }
     
   // Sleep timer
-  unsigned long currentMillis = millis ();
+  unsigned long currentMillis = millis();
   if (currentMillis - previousMillis > sleepTimer) {
     digitalWrite(enablePin, HIGH);
+    enabled = false;
   }
 }
