@@ -1,3 +1,3 @@
 <main>
-    <div> Test Component </div>
+    <div> This is a lazy loaded component </div>
 </main>

@@ -1,5 +1,10 @@
 <script>
 	import Button, {Group, GroupItem, Label, Icon} from '@smui/button';
+	import Card, {Content, PrimaryAction, Media, MediaContent, Actions, ActionButtons, ActionIcons} from '@smui/card';
+	
+	// We want to load the theme file last,
+	// this way, it will give the priority to our theme file
+  	import './theme/_smui-theme.scss';
 
 	export let name;
 	
@@ -15,32 +20,30 @@
 
 	<Button variant="unelevated"><Label>Test Button</Label></Button>
 
-	{#if TestComponent}
-		<svelte:component this={TestComponent} />
-		<svelte:component this={TestComponent} />
-		<svelte:component this={TestComponent} />
-		<svelte:component this={TestComponent} />
-	{/if}
+	<div id="dynamic-components">
+		{#if TestComponent}
+			<svelte:component this={TestComponent} />
+			<svelte:component this={TestComponent} />
+			<svelte:component this={TestComponent} />
+			<svelte:component this={TestComponent} />
+		{/if}
+	</div>
+
+	<Card style="width: 320px;">
+        <Content>A card with actions.</Content>
+        <Actions>
+          <Button on:click={() => console.log("action!")}>
+            <Label>Action</Label>
+          </Button>
+          <Button>
+            <Label>Another</Label>
+          </Button>
+        </Actions>
+    </Card>
 </main>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
+	#dynamic-components {
+		padding: 0.5em;
 	}
 </style>

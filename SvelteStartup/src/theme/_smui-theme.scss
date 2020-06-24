@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500');
+$mdc-typography-font-family: unquote("Roboto, sans-serif");
+
+// This is a setup for a dark theme
+// But also, I'm planning to make a file for a light theme
+
+body {
+    background-color: #005a66;
+    color: #fff;
+}
+
+$mdc-theme-primary: #004750;
+$mdc-theme-secondary: #eec81e;
+
+$mdc-theme-background: #004750;
+$mdc-theme-surface: #004750;
+
+$mdc-theme-on-primary: #fff;
+$mdc-theme-on-secondary: #fff;
+$mdc-theme-on-background: #fff;
+$mdc-theme-on-surface: #fff;
+
+$mdc-theme-error: rgb(224, 26, 26);
+
+$mdc-shape-small-component-radius: 0;
+$mdc-shape-medium-component-radius: 0;
+$mdc-shape-large-component-radius: 0;
+
+.mdc-card__actions {
+    min-height: 0px;
+    padding: 0px 8px;
+    
+    .mdc-button > .mdc-button__label {
+        color: #fff;
+    }
+}
+
+.mdc-button--unelevated.mdc-ripple-upgraded--background-focused:before {
+    opacity: 0;
+}
