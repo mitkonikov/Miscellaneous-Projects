@@ -31,10 +31,14 @@ $mdc-shape-large-component-radius: 0;
     padding: 0px 8px;
     
     .mdc-button > .mdc-button__label {
-        color: #fff;
+        color: $mdc-theme-on-surface;
     }
 }
 
 .mdc-button--unelevated.mdc-ripple-upgraded--background-focused:before {
     opacity: 0;
+}
+
+.mdc-text-field .mdc-text-field__input {
+    caret-color: $mdc-theme-on-primary;
 }

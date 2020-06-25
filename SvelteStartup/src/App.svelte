@@ -1,7 +1,8 @@
 <script>
 	import Button, {Group, GroupItem, Label, Icon} from '@smui/button';
 	import Card, {Content, PrimaryAction, Media, MediaContent, Actions, ActionButtons, ActionIcons} from '@smui/card';
-	
+  	import Textfield, {Input, Textarea} from '@smui/textfield';
+
 	// We want to load the theme file last,
 	// this way, it will give the priority to our theme file
   	import './theme/_smui-theme.scss';
@@ -9,6 +10,7 @@
 	export let name;
 	
 	let TestComponent;
+	let textFieldValue;
 
 	import('./TestComp.svelte')
 		.then(comp => TestComponent = comp.default)
@@ -40,6 +42,10 @@
           </Button>
         </Actions>
     </Card>
+
+    <Textfield>
+        <Input bind:value={textFieldValue}/>
+    </Textfield>
 </main>
 
 <style>
