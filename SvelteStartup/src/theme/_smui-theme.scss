@@ -39,6 +39,10 @@ $mdc-shape-large-component-radius: 0;
     opacity: 0;
 }
 
+:not(.mdc-list--non-interactive)>:not(.mdc-list-item--disabled).mdc-list-item.mdc-ripple-upgraded::before {
+    opacity: 0;
+}
+
 .mdc-text-field .mdc-text-field__input {
     caret-color: $mdc-theme-on-primary;
 }

@@ -1,8 +1,11 @@
 <script>
-	import Button, {Group, GroupItem, Label, Icon} from '@smui/button';
+	import Button, {Group, GroupItem, Label} from '@smui/button';
 	import Card, {Content, PrimaryAction, Media, MediaContent, Actions, ActionButtons, ActionIcons} from '@smui/card';
   	import Textfield, {Input, Textarea} from '@smui/textfield';
+	import List, {Item, Graphic, Meta, Subheader, Separator, Text, PrimaryText, SecondaryText} from '@smui/list';
 
+	import IconButton, {Icon} from '@smui/icon-button';
+	  
 	// We want to load the theme file last,
 	// this way, it will give the priority to our theme file
   	import './theme/_smui-theme.scss';
@@ -11,6 +14,7 @@
 	
 	let TestComponent;
 	let textFieldValue;
+	let listValue;
 
 	import('./TestComp.svelte')
 		.then(comp => TestComponent = comp.default)
@@ -46,6 +50,28 @@
     <Textfield>
         <Input bind:value={textFieldValue}/>
     </Textfield>
+
+	<List class="demo-list" dense>
+      <Item on:SMUI:action={() => listValue = 'Edit'}>
+        <Graphic class="material-icons">
+			<Icon class="material-icons">edit</Icon>
+		</Graphic>
+        <Text>Edit</Text>
+      </Item>
+      <Item on:SMUI:action={() => listValue = 'Send'}>
+        <Graphic class="material-icons">send</Graphic>
+        <Text>Send</Text>
+      </Item>
+      <Item on:SMUI:action={() => listValue = 'Archive'}>
+        <Graphic class="material-icons">archive</Graphic>
+        <Text>Archive</Text>
+      </Item>
+      <Separator />
+      <Item on:SMUI:action={() => listValue = 'Delete'}>
+        <Graphic class="material-icons">clear</Graphic>
+        <Text>Delete</Text>
+      </Item>
+    </List>
 </main>
 
 <style>
