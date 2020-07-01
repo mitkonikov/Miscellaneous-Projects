@@ -5,7 +5,9 @@
 	import List, {Item, Graphic, Meta, Subheader, Separator, Text, PrimaryText, SecondaryText} from '@smui/list';
 
 	import IconButton, {Icon} from '@smui/icon-button';
-	  
+	
+	import AccessAlarm from './icons/AccessAlarm.svelte';
+
 	// We want to load the theme file last,
 	// this way, it will give the priority to our theme file
   	import './theme/_smui-theme.scss';
@@ -68,10 +70,15 @@
       </Item>
       <Separator />
       <Item on:SMUI:action={() => listValue = 'Delete'}>
-        <Graphic class="material-icons">clear</Graphic>
-        <Text>Delete</Text>
+		<Graphic>
+
+			<AccessAlarm/>
+		</Graphic>
+        <Text>Set Alarm</Text>
       </Item>
     </List>
+
+	<AccessAlarm color="primary"/>
 </main>
 
 <style>
