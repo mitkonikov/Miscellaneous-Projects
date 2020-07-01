@@ -1,7 +1,7 @@
 <script>
 	import './_index.scss';
 
-	export let color;
+	export let color = 'primary';
 </script>
 
 <style>

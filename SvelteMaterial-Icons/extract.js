@@ -19,18 +19,35 @@ String.prototype.replaceAt = function(index, replacement) {
 }
 
 const main = () => {
+    let start = new Date();
+
     let dirContents = fs.readdirSync(ICONS_DIR);
     const template = fs.readFileSync(`${DEST_DIR}/_template.svelte`).toString();
     // console.log(template);
 
     for (let i = 0; i < dirContents.length; ++i) {
+        if (dirContents[i] === "utils") continue;
+
         let fileContent = fs.readFileSync(`${ICONS_DIR}/${dirContents[i]}`).toString();
         let fileName = dirContents[i].replace(".js", ".svelte");
         fileContent = fileContent.replace(/\n/g, '');
 
-        let pathObj = fileContent.match(/createSvgIcon\((.*?)\,/g)[0];
+        let pathObj = fileContent.match(/createSvgIcon\((.*?)\,/g);
+        if (!pathObj) {
+            // this happens on the index.js
+            // so, nothing to really worry about
+            if (fileName === "index.svelte") continue;
+            console.log("Problem with file: ", fileName);
+            continue;
+        } else {
+            pathObj = pathObj[0];
+        }
+
         pathObj = pathObj.replace('createSvgIcon(', '');
         pathObj = pathObj.replaceAt(pathObj.length - 1, ' ');
+        pathObj = pathObj.replace('<React.Fragment>', '');
+        pathObj = pathObj.replace('</React.Fragment>', '');
+        pathObj = pathObj.replace('</ React.Fragment>', '');
         pathObj = pathObj.trim();
         // console.log(pathObj);
 
@@ -39,6 +56,9 @@ const main = () => {
 
         console.log(`Written icon ${fileName}`);
     }
+
+    let end = new Date() - start;
+    console.info('Execution time: %dms', end);
 }
 
 main();

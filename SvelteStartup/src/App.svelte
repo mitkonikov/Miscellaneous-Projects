@@ -7,6 +7,7 @@
 	import IconButton, {Icon} from '@smui/icon-button';
 	
 	import AccessAlarm from './icons/AccessAlarm.svelte';
+	import ZoomOutSharp from './../../SvelteMaterial-Icons/icons/ZoomOutSharp.svelte';
 
 	// We want to load the theme file last,
 	// this way, it will give the priority to our theme file
@@ -79,6 +80,7 @@
     </List>
 
 	<AccessAlarm color="primary"/>
+	<ZoomOutSharp/>
 </main>
 
 <style>
