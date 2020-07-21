@@ -1,4 +1,4 @@
-# Svelte Template App for our SvelteMaterial-Icons project
+# Svelte Template App
 
 ## Get started
 
