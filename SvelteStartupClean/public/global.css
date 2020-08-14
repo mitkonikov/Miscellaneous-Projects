@@ -1,0 +1,19 @@
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	font-family: 'Roboto';
+}
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+    background-color: #44aed8;
+}
+
+main {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}

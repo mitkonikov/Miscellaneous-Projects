@@ -5,11 +5,11 @@ $mdc-typography-font-family: unquote("Roboto, sans-serif");
 // But also, I'm planning to make a file for a light theme
 
 body {
-    background-color: #005a66;
+    background-color: #44aed8;
     color: #fff;
 }
 
-$mdc-theme-primary: #004750;
+$mdc-theme-primary: #44aed8;
 $mdc-theme-secondary: #eec81e;
 
 $mdc-theme-background: #004750;
@@ -34,7 +34,6 @@ $mdc-shape-large-component-radius: 0;
         color: $mdc-theme-on-surface;
     }
 }
-
 
 // We don't like Svelte's hover after effect (It stays activated for ever with a little bit of opacity)
 // To kill that, we set the opacity to 0

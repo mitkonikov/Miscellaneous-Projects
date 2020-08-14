@@ -1,5 +1,5 @@
 {
-  "name": "svelte-app",
+  "name": "cinefolio",
   "version": "1.0.0",
   "scripts": {
     "build": "cd public && rmdir /s /q build && cd .. && rollup -c",
@@ -19,6 +19,7 @@
   "dependencies": {
     "node-sass": "^4.14.1",
     "rollup-plugin-postcss": "^3.1.2",
-    "sirv-cli": "^0.4.4"
+    "sirv-cli": "^1.0.0",
+    "svelte-material-icons": "^1.0.3"
   }
 }
