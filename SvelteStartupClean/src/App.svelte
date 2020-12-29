@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import './theme/common.scss';
 	import './theme/_smui-theme.scss';
 </script>

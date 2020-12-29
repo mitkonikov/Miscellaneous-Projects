@@ -4,6 +4,8 @@ import commonjs from '@rollup/plugin-commonjs';
 import livereload from 'rollup-plugin-livereload';
 import postcss from 'rollup-plugin-postcss';
 import { terser } from 'rollup-plugin-terser';
+import sveltePreprocess from 'svelte-preprocess';
+import typescript from '@rollup/plugin-typescript';
 
 const production = !process.env.ROLLUP_WATCH;
 
@@ -43,7 +45,7 @@ const postcssOptions = () => ({
 });
 
 export default {
-	input: 'src/main.js',
+	input: 'src/main.ts',
 	output: {
 		sourcemap: true,
 		format: 'es',
@@ -56,10 +58,11 @@ export default {
 			dev: !production,
 			// we'll extract any component CSS out into
 			// a separate file - better for performance
-			css: true
+			css: true,
 			// css => {
 			// 	css.write('public/build/bundle.css');
-			// }
+			// },
+			preprocess: sveltePreprocess(),
 		}),
 
 		// If you have external dependencies installed from
@@ -72,6 +75,7 @@ export default {
 			dedupe: ['svelte']
 		}),
 		commonjs(),
+		typescript({ sourceMap: !production }),
 		
 		postcss(postcssOptions()),
 
