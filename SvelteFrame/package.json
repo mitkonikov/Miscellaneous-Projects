@@ -17,7 +17,7 @@
     "svelte-material-ui": "^1.0.0-beta.21"
   },
   "dependencies": {
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "rollup-plugin-postcss": "^3.1.2",
     "sirv-cli": "^0.4.4",
     "svelte-material-icons": "^1.0.3"
